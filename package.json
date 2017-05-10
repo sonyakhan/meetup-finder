@@ -15,6 +15,9 @@
     "karma-junit-reporter": "^0.4.1",
     "protractor": "^4.0.9"
   },
+  "dependencies": {
+  "bower": "^1.7.7"
+  },
   "scripts": {
     "postinstall": "bower install",
     "update-deps": "npm update",
