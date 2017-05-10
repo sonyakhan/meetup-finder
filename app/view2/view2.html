@@ -1,0 +1,29 @@
+<!-- Result Page (view 2) -->
+
+<div class="table-responsive">
+  <table class="table table-condensed">
+    <thead>
+      <tr>
+        <th>Group</th>
+        <th>Where</th>
+        <th>Who</th>
+        <th>Photo</th>
+        <th>When</th>
+      </tr>
+    </thead>
+    <tbody ng-repeat="group in meetupResult.data | orderBy:'name'">
+      <tr>
+        <td class="wrap"><a href="{{ group.link }}" target="_blank">{{ group.name }}</a></td>
+        <td>{{ group.city }}, {{ group.state }}</td>
+        <td>{{ group.members }} {{ group.who }}</td>
+        <td><img src="{{ group.key_photo.thumb_link }}"></img></td>
+        <td>{{ group.next_event.time | date:'MM-dd-yyyy hh:mm a' : group.timezone }}</td>
+      </tr>
+      <tr>
+        <td colspan="5">
+          <p class="wrap desc-space" ng-bind-html="group.description"></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

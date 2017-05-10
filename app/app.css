@@ -1,0 +1,50 @@
+/* applied to all */
+
+body {
+  font-family: 'Open Sans', sans-serif !important;
+  padding-top: 70px;
+}
+
+/* Styles for Search Page (view 1) */
+
+.meetup-brand .navbar-brand {
+  background: url(https://secure.meetup.com/s/img/0/logo/svg/logo--script.svg) center / contain no-repeat;
+  width: 100px;
+  margin-left: -50px !important;
+  left: 50%;
+  position: absolute;
+}
+
+.btn {
+  background-color: #ed1c40 !important;
+  border-color: #ed1c40 !important;
+}
+
+.form-control:focus {
+  border-color: #ed1c40;
+  box-shadow: none;
+}
+
+/* Styles for Result Page (view 2) */
+
+.wrap {
+  word-wrap: break-word !important;
+  white-space: pre-wrap !important;
+}
+
+a, a:hover, a:visited {
+  color: #ed1c40;
+}
+
+p, td {
+  font-size: 12px;
+}
+
+.table>tbody>tr>td,
+.table>tbody>tr>th {
+  border-top: none;
+}
+
+.desc-space {
+  margin-top: 15px;
+}
